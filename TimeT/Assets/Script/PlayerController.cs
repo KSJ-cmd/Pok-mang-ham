@@ -31,7 +31,7 @@ public class PlayerController : MonoBehaviour
     void Jump()
     {
         Vector2 vector2 = new Vector2(0, playerJumpSpeed);
-        Rigidbody2D.AddForce(vector2);
+        Rigidbody2D.transform.Translate(vector2);
         Debug.Log("Jump");
     }
     void Move()
